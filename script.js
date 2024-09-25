@@ -11,3 +11,11 @@ function getComputerChoice() {
             return "scissors";
     }
 }
+
+function getHumanChoice() {
+    // Prompt user to input "rock" "paper" or "scissors"
+    // If user chose "rock" return "rock"
+    // If user chose "paper" return "paper"
+    // If user chose "scissors" return "scissors"
+    // If user choice does not match anything, prompt again
+}
