@@ -15,9 +15,9 @@ function getComputerChoice() {
 function getHumanChoice() {
     // Create isValid variable to tell if choice is valid
     let isValid = false;
-    repeat
+    do {
         // Prompt user to input "rock" "paper" or "scissors"
         let userChoice = prompt(`Please enter "rock" "paper" or "scissors"`).toLowerCase();
         // If user chose valid option, set isValid to true
-    until (isValid)
+    } while (isValid)
 }
