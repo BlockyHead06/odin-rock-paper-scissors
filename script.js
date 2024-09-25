@@ -27,3 +27,6 @@ function getHumanChoice() {
         }
     } while (!isValid)
 }
+
+let humanScore = 0;
+let computerScore = 0;
