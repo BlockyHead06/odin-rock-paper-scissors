@@ -14,7 +14,7 @@ function getComputerChoice() {
 
 function getHumanChoice() {
     // Prompt user to input "rock" "paper" or "scissors"
-    let userChoice = prompt(`Please enter "rock" "paper" or "scissors"`);
+    let userChoice = prompt(`Please enter "rock" "paper" or "scissors"`).toLowerCase();
     // If user chose "rock" return "rock"
     // If user chose "paper" return "paper"
     // If user chose "scissors" return "scissors"
