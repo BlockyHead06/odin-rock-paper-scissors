@@ -19,5 +19,11 @@ function getHumanChoice() {
         // Prompt user to input "rock" "paper" or "scissors"
         let userChoice = prompt(`Please enter "rock" "paper" or "scissors"`).toLowerCase();
         // If user chose valid option, set isValid to true
+        switch (userChoice) {
+            case "rock":
+            case "paper":
+            case "scissors":
+                isValid = true;
+        }
     } while (!isValid)
 }
