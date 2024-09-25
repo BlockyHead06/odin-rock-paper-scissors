@@ -13,10 +13,11 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    // Prompt user to input "rock" "paper" or "scissors"
-    let userChoice = prompt(`Please enter "rock" "paper" or "scissors"`).toLowerCase();
-    // If user chose "rock" return "rock"
-    // If user chose "paper" return "paper"
-    // If user chose "scissors" return "scissors"
-    // If user choice does not match anything, prompt again
+    // Create isValid variable to tell if choice is valid
+    let isValid = false;
+    repeat
+        // Prompt user to input "rock" "paper" or "scissors"
+        let userChoice = prompt(`Please enter "rock" "paper" or "scissors"`).toLowerCase();
+        // If user chose valid option, set isValid to true
+    until (isValid)
 }
