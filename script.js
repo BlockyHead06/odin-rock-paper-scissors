@@ -30,3 +30,10 @@ function getHumanChoice() {
 
 let humanScore = 0;
 let computerScore = 0;
+
+function playRound() {
+    // Get human choice and computer choice
+    // Determine and output the winner
+    // If human wins, increment humanScore
+    // If computer wins, increment computerScore
+}
