@@ -31,26 +31,28 @@ function getHumanChoice() {
     return userChoice;
 }
 
-let humanScore = 0;
-let computerScore = 0;
+function playGame() {
+    let humanScore = 0;
+    let computerScore = 0;
 
-function playRound(humanChoice, computerChoice) {
-    // Determine and output the winner
-    if (humanChoice === computerChoice) {
-        console.log("It's a tie!");
-    }
-    else if (humanChoice === "rock" && computerChoice === "scissors"
-          || humanChoice === "paper" && computerChoice === "rock"
-          || humanChoice === "scissors" && computerChoice === "paper") 
-    {
-        console.log(`You win! ${humanChoice} beats ${computerChoice}`);
-        // If human wins, increment humanScore
-        ++humanScore;
-    }
-    else {
-        console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
-        // If computer wins, increment computerScore
-        ++computerScore;
+    function playRound(humanChoice, computerChoice) {
+        // Determine and output the winner
+        if (humanChoice === computerChoice) {
+            console.log("It's a tie!");
+        }
+        else if (humanChoice === "rock" && computerChoice === "scissors"
+            || humanChoice === "paper" && computerChoice === "rock"
+            || humanChoice === "scissors" && computerChoice === "paper") 
+        {
+            console.log(`You win! ${humanChoice} beats ${computerChoice}`);
+            // If human wins, increment humanScore
+            ++humanScore;
+        }
+        else {
+            console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
+            // If computer wins, increment computerScore
+            ++computerScore;
+        }
     }
 }
 
