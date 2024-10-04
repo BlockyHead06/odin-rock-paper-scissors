@@ -54,10 +54,12 @@ function playGame() {
             ++computerScore;
         }
     }
+
+    for (let i = 0; i < 5; i++) { // Play 5 rounds
+        // Get human choice and computer choice
+        const humanChoice = getHumanChoice();
+        const computerChoice = getComputerChoice();
+
+        playRound(humanChoice, computerChoice);
+    }
 }
-
-// Get human choice and computer choice
-const humanChoice = getHumanChoice();
-const computerChoice = getComputerChoice();
-
-playRound(humanChoice, computerChoice);
