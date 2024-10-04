@@ -39,6 +39,12 @@ function playRound(humanChoice, computerChoice) {
     if (humanChoice === computerChoice) {
         console.log("It's a tie! Try again");
     }
+    else if (humanChoice === "rock" && computerChoice === "scissors"
+          || humanChoice === "paper" && computerChoice === "rock"
+          || humanChoice === "scissors" && computerChoice === "paper") 
+    {
+        console.log(`You win! ${humanChoice} beats ${computerChoice}`);
+    }
     // If human wins, increment humanScore
     // If computer wins, increment computerScore
 }
