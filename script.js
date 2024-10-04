@@ -37,7 +37,7 @@ let computerScore = 0;
 function playRound(humanChoice, computerChoice) {
     // Determine and output the winner
     if (humanChoice === computerChoice) {
-        console.log("It's a tie! Try again");
+        console.log("It's a tie!");
     }
     else if (humanChoice === "rock" && computerChoice === "scissors"
           || humanChoice === "paper" && computerChoice === "rock"
