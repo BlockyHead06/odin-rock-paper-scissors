@@ -55,3 +55,5 @@ function playRound(humanChoice, computerChoice) {
 // Get human choice and computer choice
 const humanChoice = getHumanChoice();
 const computerChoice = getComputerChoice();
+
+playRound(humanChoice, computerChoice);
