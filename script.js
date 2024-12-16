@@ -55,13 +55,11 @@ function playGame() {
         }
     }
 
-    for (let i = 0; i < 5; i++) { // Play 5 rounds
-        // Get human choice and computer choice
-        const humanChoice = getHumanChoice();
-        const computerChoice = getComputerChoice();
+    // Get human choice and computer choice
+    const humanChoice = getHumanChoice();
+    const computerChoice = getComputerChoice();
 
-        playRound(humanChoice, computerChoice);
-    }
+    playRound(humanChoice, computerChoice);
 
     if (humanScore > computerScore) {
         console.log(`Congratulations! You win ${humanScore} - ${computerScore}`);
