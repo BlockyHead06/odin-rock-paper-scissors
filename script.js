@@ -55,10 +55,6 @@ function playGame() {
         }
     }
 
-    // Get human choice and computer choice
-    const humanChoice = getHumanChoice();
-    const computerChoice = getComputerChoice();
-
     playRound(humanChoice, computerChoice);
 
     if (humanScore > computerScore) {
