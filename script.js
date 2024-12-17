@@ -4,7 +4,7 @@ function getComputerChoice() {
 
     switch (randNum) {
         case 0: // If the number is 0, return "rock"
-            return "rock"; 
+            return "rock";
         case 1: // If the number is 1, return "paper"
             return "paper";
         case 2: // If the number is 2, return "scissors"
@@ -31,40 +31,25 @@ function getHumanChoice() {
     return userChoice;
 }
 
-function playGame() {
-    let humanScore = 0;
-    let computerScore = 0;
+let humanScore = 0;
+let computerScore = 0;
 
-    function playRound(humanChoice, computerChoice) {
-        // Determine and output the winner
-        if (humanChoice === computerChoice) {
-            console.log("It's a tie!");
-        }
-        else if (humanChoice === "rock" && computerChoice === "scissors"
-            || humanChoice === "paper" && computerChoice === "rock"
-            || humanChoice === "scissors" && computerChoice === "paper") 
-        {
-            console.log(`You win! ${humanChoice} beats ${computerChoice}`);
-            // If human wins, increment humanScore
-            ++humanScore;
-        }
-        else {
-            console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
-            // If computer wins, increment computerScore
-            ++computerScore;
-        }
+function playRound(humanChoice, computerChoice) {
+    // Determine and output the winner
+    if (humanChoice === computerChoice) {
+        console.log("It's a tie!");
     }
-
-    playRound(humanChoice, computerChoice);
-
-    if (humanScore > computerScore) {
-        console.log(`Congratulations! You win ${humanScore} - ${computerScore}`);
-    }
-    else if (computerScore > humanScore) {
-        console.log(`Too bad! You lose ${humanScore} - ${computerScore}`);
+    else if (humanChoice === "rock" && computerChoice === "scissors"
+        || humanChoice === "paper" && computerChoice === "rock"
+        || humanChoice === "scissors" && computerChoice === "paper") {
+        console.log(`You win! ${humanChoice} beats ${computerChoice}`);
+        // If human wins, increment humanScore
+        ++humanScore;
     }
     else {
-        console.log(`Oops! It's a tie! ${humanScore} - ${computerScore}`);
+        console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
+        // If computer wins, increment computerScore
+        ++computerScore;
     }
 }
 
