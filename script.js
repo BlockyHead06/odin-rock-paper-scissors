@@ -52,5 +52,3 @@ function playRound(humanChoice, computerChoice) {
         ++computerScore;
     }
 }
-
-playGame();
