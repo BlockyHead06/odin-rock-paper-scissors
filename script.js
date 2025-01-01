@@ -52,6 +52,8 @@ function playRound(humanChoice, computerChoice) {
         // If computer wins, increment computerScore
         ++computerScore;
     }
+    results.innerText += `\nYour score: ${humanScore}
+                          Computer's score: ${computerScore}`
 }
 
 const buttons = document.querySelectorAll("button");
