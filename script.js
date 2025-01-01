@@ -50,12 +50,12 @@ function playRound(humanChoice, computerChoice) {
     else if (humanChoice === "rock" && computerChoice === "scissors"
         || humanChoice === "paper" && computerChoice === "rock"
         || humanChoice === "scissors" && computerChoice === "paper") {
-        results.innerText = `You win, ${humanChoice} beats ${computerChoice}!`;
+        results.innerText = `You scored, ${humanChoice} beats ${computerChoice}!`;
         // If human wins, increment humanScore
         ++humanScore;
     }
     else {
-        results.innerText = `You lose, ${computerChoice} beats ${humanChoice}!`;
+        results.innerText = `Computer scored, ${computerChoice} beats ${humanChoice}!`;
         // If computer wins, increment computerScore
         ++computerScore;
     }
