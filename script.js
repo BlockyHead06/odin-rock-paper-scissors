@@ -35,6 +35,13 @@ let humanScore = 0;
 let computerScore = 0;
 let results = document.getElementById("results");
 
+function announceWinner(message) {
+    results.innerText = `${message} ${humanScore} - ${computerScore}!`;
+    // Reset for next round
+    humanScore = 0;
+    computerScore = 0;
+}
+
 function playRound(humanChoice, computerChoice) {
     // Determine and output the winner
     if (humanChoice === computerChoice) {
