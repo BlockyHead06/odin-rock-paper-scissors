@@ -61,6 +61,13 @@ function playRound(humanChoice, computerChoice) {
     }
     results.innerText += `\nYour score: ${humanScore}
                           Computer's score: ${computerScore}`
+
+    if (humanScore == 5) {
+        announceWinner("You win");
+    }
+    else if (computerScore == 5) {
+        announceWinner("You lose");
+    }
 }
 
 const buttons = document.querySelectorAll("button");
